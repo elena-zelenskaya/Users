@@ -23,6 +23,7 @@
 						<th scope="col">Email</th>
 						<th scope="col">Age</th>
 						<th scope="col">Action</th>
+						<th scope="col">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -32,7 +33,8 @@
 						<td>{{user.first_name}} {{user.last_name}}</td>
 						<td>{{user.email_address}}</td>
 						<td>{{user.age}}</td>
-						<td><a href="delete/{{user.id}}">Delete</a></td>
+						<td><a href="delete/{{user.id}}/">Delete</a></td>
+						<td><a href="edit/{{user.id}}/">Edit</a></td>
 					</tr>
 
 					{% endfor %}
@@ -50,7 +52,7 @@
 						<input
 							type="text"
 							class="form-control"
-							id="first_name"l"
+							id="first_name"
 							name="fname"
 						/>
 					</div>
